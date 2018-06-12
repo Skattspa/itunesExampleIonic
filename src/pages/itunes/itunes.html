@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Itunes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <input type="text" [(ngModel)]="busqueda_usuario">
+  <button ion-button blockground (click)="buscar()" >Encontrar</button>
+
+  <div *ngIf="cargado">
+    <ul *ngFor="let cancion of array_canciones">
+      <li>{{cancion.artistName}}-{{cancion.trackName}}</li>
+      <img src="{{cancion.artworkUrl100}}">
+      <audio src="{{cancion.previewUrl}}" controls></audio>
+      
+    </ul>
+  </div>
+</ion-content>
