@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicComponent } from '../pages/itunes/itunes';
 import { IonicCreditosComponent } from '../pages/creditos/creditos';
+import { BasicPage } from '../pages/modal/modal';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IonicCreditosComponent } from '../pages/creditos/creditos';
     ItemDetailsPage,
     ListPage,
     IonicComponent,
-    IonicCreditosComponent
+    IonicCreditosComponent,
+    BasicPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { IonicCreditosComponent } from '../pages/creditos/creditos';
     ItemDetailsPage,
     ListPage,
     IonicComponent,
-    IonicCreditosComponent
+    IonicCreditosComponent,
+    BasicPage
   ],
   providers: [
     StatusBar,
