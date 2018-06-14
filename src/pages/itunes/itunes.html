@@ -10,6 +10,13 @@
 
 <ion-content padding>
 
+  <div showWhen="android,ios">
+    <p>esto es un movil</p>
+  </div>
+  <div ng-if="!esMovil">
+    <p>esto es una web</p>
+  </div>
+
   <input type="text" [(ngModel)]="busqueda_usuario">
   <button ion-button blockground (click)="buscar()" >Encontrar</button>
 

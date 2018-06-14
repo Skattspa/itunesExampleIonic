@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicComponent } from '../pages/itunes/itunes';
+import { IonicCreditosComponent } from '../pages/creditos/creditos';
 
 
 @Component({
@@ -32,7 +33,8 @@ export class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Itunes', component: IonicComponent }
+      { title: 'Itunes', component: IonicComponent },
+      { title: 'creditos', component: IonicCreditosComponent }
     ];
   }
 

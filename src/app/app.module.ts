@@ -10,6 +10,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicComponent } from '../pages/itunes/itunes';
+import { IonicCreditosComponent } from '../pages/creditos/creditos';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { IonicComponent } from '../pages/itunes/itunes';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    IonicComponent
+    IonicComponent,
+    IonicCreditosComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { IonicComponent } from '../pages/itunes/itunes';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    IonicComponent
+    IonicComponent,
+    IonicCreditosComponent
   ],
   providers: [
     StatusBar,
