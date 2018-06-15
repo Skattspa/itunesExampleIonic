@@ -8,7 +8,7 @@ import { List } from 'ionic-angular';
   templateUrl: 'creditos.html'
 })
 export class IonicCreditosComponent {
-  array_compañeros : Compañeros[];
+  array_compañeros;
   constructor( ) {
     console.log ("constructor");
     var compañeros = [
@@ -19,7 +19,8 @@ export class IonicCreditosComponent {
       },
       {
         nombre: 'Angel Fernandez Alvarez',
-        github: 'github!',
+        github: 'https://github.com/antroxu',
+        linkedin: 'https://www.linkedin.com/in/ángel-fernández-álvarez-60083521',
         image: 'assets/imgs/logo.png'
       },
       {
@@ -33,28 +34,21 @@ export class IonicCreditosComponent {
         image: 'assets/imgs/logo.png'
       },
       {
-        nombre: 'daher7',
-        github: 'github!',
-        image: 'assets/imgs/logo.png'
-      },
-      {
         nombre: 'Daniel Adrián Durán',
-        github: 'github!',
+        github: 'https://github.com/DanielFrontEnd19',
+        linkedin: 'https://www.linkedin.com/in/frontenddanieladri%C3%A1n/',
         image: 'assets/imgs/logo.png'
       },
       {
-        nombre: 'quienabuenarbol@gmail.com',
-        github: 'github!',
+        nombre: 'David Herrera Torrado',
+        github: 'https://github.com/daher7',
+        linkedin: 'https://www.linkedin.com/in/david-herrera-torrado-771083166/',
         image: 'assets/imgs/logo.png'
       },
       {
-        nombre: 'keova@yahoo.com',
-        github: 'github!',
-        image: 'assets/imgs/logo.png'
-      },
-      {
-        nombre: 'keova@yahoo.com',
-        github: 'github!',
+        nombre: 'Elena Jarabo',
+        github: 'https://github.com/keova',
+        linkedin: 'https://www.linkedin.com/in/elena-jarabo-ruiz/',
         image: 'assets/imgs/logo.png'
       },
       {
@@ -69,30 +63,39 @@ export class IonicCreditosComponent {
       },
       {
         nombre: 'Manuel Jesús Moreno Arévalo',
-        github: 'github!',
-        image: 'assets/imgs/logo.png'
-      },
-      {
-        nombre: 'Luis Martinez  jccalzadag@gmail.com',
-        github: 'github!',
+        github: 'https://github.com/manuelazo30',
+        linkedin: 'https://www.linkedin.com/in/manuelazo/',
         image: 'assets/imgs/logo.png'
       },
       {
         nombre: 'Oscar  Rivera Yunquera',
-        github: 'github!',
+        github: 'https://github.com/Oscarriveragit',
+        linkedin: 'Www.linkedin.com/oscarriverayunquera',
+        image: 'assets/imgs/logo.png'
+      },
+      {
+        nombre: 'Obdulia Zamora Doménech',
+        github: 'https://github.com/ozamgmam',
+        linkedin: 'https://www.linkedin.com/in/obdulia-zamora-dom%C3%A9nech-081a4742/',
+        web: 'web2you.esy.es',
         image: 'assets/imgs/logo.png'
       },
       {
         nombre: 'Valeriano Moreno',
-        github: 'github!',
+        github: 'https://github.com/Valexx55/',
+        linkedin: 'No me gusta linkedin',
         image: 'assets/imgs/logo.png'
       },
       
     ];
+    
+    this.mostrar(compañeros);
   }
 
   mostrar (compañeros){
     console.log(compañeros);
+    this.array_compañeros = compañeros;
+
   }
   // @ViewChild(List) list: List;
   // stopSliding() {

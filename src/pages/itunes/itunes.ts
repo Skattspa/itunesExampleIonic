@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { Cancion } from '../../app/cancion.model';
 import { Platform } from 'ionic-angular';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'itunes',
@@ -24,7 +25,7 @@ export class IonicComponent {
     return esMovil
   }
 
-  constructor( public itunes_service:ItunesService, public plt: Platform, public ScreenOrientation: ScreenOrientation) {
+  constructor( public itunes_service:ItunesService, public plt: Platform, public ScreenOrientation: ScreenOrientation, public storage: Storage) {
     console.log ("La página 'itunes.html' se va a cargar");
     this.busqueda_usuario="";
     this.cargado = false;
@@ -52,6 +53,8 @@ export class IonicComponent {
 
   buscar ()
   {
+    //TODO guardar el termino de busqueda en el storage
+    this.storage.set('termino_busqueda', this.busqueda_usuario);
     console.log ("Ha tocado a buscar");
     console.log ("Ha tocado a buscar " + this.busqueda_usuario);
     let resultado : Observable<Resultado> = 
@@ -66,12 +69,13 @@ export class IonicComponent {
     this.cargado = true;
     console.log ("Nombre del primero " + this.array_canciones[0].artistName);
 
-
-    
-
-
   }
-  
+  consulta (){
+    console.log("tocar consulta");
+    this.storage.get('termino_busqueda').then((val) => {
+      console.log('Tu termino_busqueda es', val);
+    });
+  }  
 
 
   

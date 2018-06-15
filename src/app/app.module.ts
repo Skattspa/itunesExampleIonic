@@ -12,6 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicComponent } from '../pages/itunes/itunes';
 import { IonicCreditosComponent } from '../pages/creditos/creditos';
 import { BasicPage } from '../pages/modal/modal';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BasicPage } from '../pages/modal/modal';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

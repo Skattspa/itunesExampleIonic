@@ -10,7 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicComponent } from '../pages/itunes/itunes';
 import { IonicCreditosComponent } from '../pages/creditos/creditos';
 import { BasicPage } from '../pages/modal/modal';
-
+import { Storage } from '@ionic/storage';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,12 +21,14 @@ export class MyApp {
   // make HelloIonicPage the root (or first) page
   rootPage = HelloIonicPage;
   pages: Array<{title: string, component: any}>;
-
+  mispages: Array<{title: string, component: any}>;
+  // estoyEnItunes : number;
   constructor(
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen
+    public splashScreen: SplashScreen,
+    public storage: Storage
   ) {
     this.initializeApp();
 
@@ -37,8 +39,9 @@ export class MyApp {
       { title: 'Itunes', component: IonicComponent },
       { title: 'creditos', component: IonicCreditosComponent },
       { title: 'Modal Prueba', component: BasicPage }
-
     ];
+
+
   }
 
   initializeApp() {
@@ -47,6 +50,11 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      // this.estoyEnItunes = 0; //start counter
+      // this.storage.get('estoyEnItunes').then((val) => {
+      //   console.log('estoyEnItunes es', val);
+      //   this.estoyEnItunes = val
+      // });
     });
   }
 
@@ -54,6 +62,21 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component)
+    // this.estoyEnItunes = this.estoyEnItunes + 1;  //counter up
+    // //this.storage.set('estoyEnItunes', this.estoyEnItunes);
+    // console.log ('mi contador es ', this.estoyEnItunes);
+    // if ((this.estoyEnItunes % 2) === 0 || this.estoyEnItunes == null){
+    //   this.nav.setRoot(HelloIonicPage);
+    //   console.log('estas en la pagina de hello!')
+    // } else {
+    //   this.nav.setRoot(IonicComponent); 
+      
+    //   console.log('a escuchar musica!')
+    // }
+    //this.storage.set('estoyEnItunes', estoyEnItunes );
+    
   }
+
+  contador (){}
 }

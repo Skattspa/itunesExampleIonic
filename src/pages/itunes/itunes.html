@@ -19,7 +19,7 @@
 
   <input type="text" [(ngModel)]="busqueda_usuario">
   <button ion-button blockground (click)="buscar()" >Encontrar</button>
-
+  <button ion-button (click)="consulta()"> <ion-icon name="search"></ion-icon></button>
   <div *ngIf="cargado">
     <ul *ngFor="let cancion of array_canciones">
       <li>{{cancion.artistName}}-{{cancion.trackName}}</li>
