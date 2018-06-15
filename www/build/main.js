@@ -253,10 +253,90 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var IonicCreditosComponent = /** @class */ (function () {
     function IonicCreditosComponent() {
         console.log("constructor");
+        var compañeros = [
+            {
+                nombre: 'Angel Cachón',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Angel Fernandez Alvarez',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Amaya Valdiviejas',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Carlos Moreno',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'daher7',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Daniel Adrián Durán',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'quienabuenarbol@gmail.com',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'keova@yahoo.com',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'keova@yahoo.com',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'jose  jccalzadag@gmail.com',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Luis Martinez',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Manuel Jesús Moreno Arévalo',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Luis Martinez  jccalzadag@gmail.com',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Oscar  Rivera Yunquera',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+            {
+                nombre: 'Valeriano Moreno',
+                github: 'github!',
+                image: 'assets/imgs/logo.png'
+            },
+        ];
     }
+    IonicCreditosComponent.prototype.mostrar = function (compañeros) {
+        console.log(compañeros);
+    };
     IonicCreditosComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'creditos',template:/*ion-inline-start:"/home/sk4tt/REPOSITORIOS/itunesExampleIonic/src/pages/creditos/creditos.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Creditos</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <div *ngIf="array_compañeros"> -->\n    <!-- <section *ngFor="" > -->\n        <ion-list>Nombre completo <span *ngIf="nick"></span></ion-list>\n        <ion-list>github</ion-list>\n        <ion-list><img src="#" alt="icono">  </ion-list>        \n    <!-- </section>\n  </div> -->\n\n</ion-content>\n'/*ion-inline-end:"/home/sk4tt/REPOSITORIOS/itunesExampleIonic/src/pages/creditos/creditos.html"*/
+            selector: 'creditos',template:/*ion-inline-start:"/home/sk4tt/REPOSITORIOS/itunesExampleIonic/src/pages/creditos/creditos.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Creditos</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <div *ngIf="array_compañeros"> -->\n     <!-- <section *ngFor="let compañero of compañeros" >  -->\n\n      <!-- {{compañeros.nombre}},{{compañeros.github}}, {{compañeros.image}}\n      -->\n        <ion-list>Nombre completo <span *ngIf="nick"></span></ion-list>\n        <ion-list>github</ion-list>\n        <ion-list><img src="#" alt="icono">  </ion-list>        \n    <!-- </section>\n  </div> -->\n\n</ion-content>\n'/*ion-inline-end:"/home/sk4tt/REPOSITORIOS/itunesExampleIonic/src/pages/creditos/creditos.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], IonicCreditosComponent);
@@ -298,10 +378,9 @@ var BasicPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sk4tt/REPOSITORIOS/itunesExampleIonic/src/pages/modal/template.html"*/'<ion-header>\n    <ion-navbar>\n      <ion-title>Modals</ion-title>\n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content>\n  \n    <ion-list>\n      <ion-list-header>\n        Hobbits\n      </ion-list-header>\n      <a ion-item (click)="openModal({charNum: 0})">\n        Gollum\n      </a>\n      <a ion-item (click)="openModal({charNum: 1})">\n        Frodo Baggins\n      </a>\n      <a ion-item (click)="openModal({charNum: 2})">\n        Sam\n      </a>\n    </ion-list>\n  \n  </ion-content>\n  '/*ion-inline-end:"/home/sk4tt/REPOSITORIOS/itunesExampleIonic/src/pages/modal/template.html"*/,
             selector: 'modal'
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
     ], BasicPage);
     return BasicPage;
-    var _a;
 }());
 
 var ModalContentPage = /** @class */ (function () {
@@ -350,10 +429,11 @@ var ModalContentPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             template: "\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Description\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)=\"dismiss()\">\n        <span ion-text color=\"primary\" showWhen=\"ios\">Cancel</span>\n        <ion-icon name=\"md-close\" showWhen=\"android, windows\"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n      <ion-item>\n        <ion-avatar item-start>\n          <img src=\"{{character.image}}\">\n        </ion-avatar>\n        <h2>{{character.name}}</h2>\n        <p>{{character.quote}}</p>\n      </ion-item>\n      <ion-item *ngFor=\"let item of character['items']\">\n        {{item.title}}\n        <ion-note item-end>\n          {{item.note}}\n        </ion-note>\n      </ion-item>\n  </ion-list>\n</ion-content>\n"
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ViewController */]])
     ], ModalContentPage);
     return ModalContentPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=modal.js.map
