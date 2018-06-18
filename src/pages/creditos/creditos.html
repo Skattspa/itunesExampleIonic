@@ -8,20 +8,18 @@
 </ion-header>
 
 
-<ion-content padding>
-  <!-- <div *ngIf="array_compañeros"> -->
-     <!-- <section *ngFor="let compañero of compañeros" >  -->
-
-      <!-- {{compañeros.nombre}},{{compañeros.github}}, {{compañeros.image}}
-      -->
-        <ion-list>Nombre completo <span *ngIf="nick"></span></ion-list>
-        <ion-list>github</ion-list>
-        <ion-list><img src="#" alt="icono">  </ion-list>        
-    <!-- </section>
-  </div> -->
-
-  <!-- <ul *ngFor="let compañero of compañeros">
-    <li>{{compañeros.nombre}}-{{compañeros.github}}</li>
-  </ul> -->
+<ion-content>
+      <ion-list>
+          <section ion-item *ngFor="let compi of gente" > <!--(click)="itemTapped($event, item)"-->
+            <ion-icon item-left>
+                <img src="{{compi.image}}" alt="No tienes foto" height="50px" width="50px" style="border-radius: 50%;">
+            </ion-icon> 
+            {{compi.nombre}}
+            <div class="item-note" item-right>
+              <a href="{{compi.github}}" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="{{compi.linkedin}}" target="_blank">  <ion-icon name="logo-linkedin"></ion-icon></a>
+              </div>
+            </section>
+        </ion-list>
 
 </ion-content>

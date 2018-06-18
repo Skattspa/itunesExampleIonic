@@ -13,6 +13,9 @@ import { IonicComponent } from '../pages/itunes/itunes';
 import { IonicCreditosComponent } from '../pages/creditos/creditos';
 import { BasicPage } from '../pages/modal/modal';
 import { IonicStorageModule } from '@ionic/storage';
+import { FormularioComponent } from '../pages/formulario/formulario';
+import { EqualValidator } from './validatorpwd.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { IonicStorageModule } from '@ionic/storage';
     ListPage,
     IonicComponent,
     IonicCreditosComponent,
-    BasicPage
+    BasicPage,
+    FormularioComponent,
+    EqualValidator
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,7 +44,8 @@ import { IonicStorageModule } from '@ionic/storage';
     ListPage,
     IonicComponent,
     IonicCreditosComponent,
-    BasicPage
+    BasicPage,
+    FormularioComponent
   ],
   providers: [
     StatusBar,

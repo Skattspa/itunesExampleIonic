@@ -11,6 +11,7 @@ import { IonicComponent } from '../pages/itunes/itunes';
 import { IonicCreditosComponent } from '../pages/creditos/creditos';
 import { BasicPage } from '../pages/modal/modal';
 import { Storage } from '@ionic/storage';
+import { FormularioComponent } from '../pages/formulario/formulario';
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +39,8 @@ export class MyApp {
       { title: 'My First List', component: ListPage },
       { title: 'Itunes', component: IonicComponent },
       { title: 'creditos', component: IonicCreditosComponent },
-      { title: 'Modal Prueba', component: BasicPage }
+      { title: 'Modal Prueba', component: BasicPage },
+      { title: 'Formulario', component: FormularioComponent },
     ];
 
 

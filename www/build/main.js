@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +13,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 111;
+webpackEmptyAsyncContext.id = 112;
 
 /***/ }),
 
-/***/ 153:
+/***/ 154:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -30,11 +30,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 153;
+webpackEmptyAsyncContext.id = 154;
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66,14 +66,14 @@ var HelloIonicPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item_details_item_details__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item_details_item_details__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -119,7 +119,7 @@ var ListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -157,16 +157,16 @@ var ItemDetailsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IonicComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_bitunes_service__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_bitunes_service__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_screen_orientation__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_screen_orientation__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -236,17 +236,16 @@ var IonicComponent = /** @class */ (function () {
             selector: 'itunes',template:/*ion-inline-start:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/itunes/itunes.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Hello Itunes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n\n  <div showWhen="android,ios">\n    <p>esto es un movil</p>\n  </div>\n  <div ng-if="!esMovil">\n    <p>esto es una web</p>\n  </div>\n\n  <input type="text" [(ngModel)]="busqueda_usuario">\n  <button ion-button blockground (click)="buscar()" >Encontrar</button>\n  <button ion-button (click)="consulta()"> <ion-icon name="search"></ion-icon></button>\n  <div *ngIf="cargado">\n    <ul *ngFor="let cancion of array_canciones">\n      <li>{{cancion.artistName}}-{{cancion.trackName}}</li>\n      <img src="{{cancion.artworkUrl100}}">\n      <audio src="{{cancion.previewUrl}}" controls></audio>\n      \n    </ul>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/itunes/itunes.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_1__app_bitunes_service__["a" /* ItunesService */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_screen_orientation__["a" /* ScreenOrientation */]]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__app_bitunes_service__["a" /* ItunesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__app_bitunes_service__["a" /* ItunesService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_screen_orientation__["a" /* ScreenOrientation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_screen_orientation__["a" /* ScreenOrientation */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__app_bitunes_service__["a" /* ItunesService */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_screen_orientation__["a" /* ScreenOrientation */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]])
     ], IonicComponent);
     return IonicComponent;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=itunes.js.map
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -265,91 +264,94 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var IonicCreditosComponent = /** @class */ (function () {
     function IonicCreditosComponent() {
         console.log("constructor");
-        var compañeros = [
+        //let compa1: Companeros = new Companeros ("Angel J. Cachón", "https://github.com/acachon","https://www.linkedin.com/in/angelcachon/","https://avatars0.githubusercontent.com/u/36812721?s=460&v=4");
+        //this.gente.push (compa1);
+        this.gente = [
             {
-                nombre: 'Angel Cachón',
-                github: 'github!',
-                image: 'assets/imgs/logo.png'
+                nombre: "Angel J. Cachón",
+                github: "https://github.com/acachon",
+                linkedin: "https://www.linkedin.com/in/angelcachon/",
+                image: "https://avatars0.githubusercontent.com/u/36812721?s=460&v=4"
             },
             {
-                nombre: 'Angel Fernandez Alvarez',
-                github: 'https://github.com/antroxu',
-                linkedin: 'https://www.linkedin.com/in/ángel-fernández-álvarez-60083521',
-                image: 'assets/imgs/logo.png'
+                nombre: "Angel Fernandez Alvarez",
+                github: "https://github.com/antroxu",
+                linkedin: "https://www.linkedin.com/in/ángel-fernández-álvarez-60083521",
+                image: "https://media.licdn.com/dms/image/C5603AQEvFRqszVsoqw/profile-displayphoto-shrink_800_800/0?e=1534982400&v=beta&t=Odz7zsutS6mciHhvxn5ekF3vjmzB3GgMpJhe9201_oE"
             },
             {
-                nombre: 'Amaya Valdiviejas',
-                github: 'github!',
-                image: 'assets/imgs/logo.png'
+                nombre: "Amaya Valdiviejas Ruiz",
+                github: "https://github.com/amaya1234",
+                linkedin: "https://es.linkedin.com/in/amaya-valdiviejas-ruiz-3696869b",
+                image: "https://avatars2.githubusercontent.com/u/22312605?s=400&v=4"
             },
             {
-                nombre: 'Carlos Moreno',
-                github: 'github!',
-                image: 'assets/imgs/logo.png'
+                nombre: "Carlos Moreno",
+                github: "github!",
+                image: "assets/imgs/logo.png"
             },
             {
-                nombre: 'Daniel Adrián Durán',
-                github: 'https://github.com/DanielFrontEnd19',
-                linkedin: 'https://www.linkedin.com/in/frontenddanieladri%C3%A1n/',
-                image: 'assets/imgs/logo.png'
+                nombre: "Daniel Adrián Durán",
+                github: "https://github.com/DanielFrontEnd19",
+                linkedin: "https://www.linkedin.com/in/frontenddanieladri%C3%A1n/",
+                image: "https://media.licdn.com/dms/image/C4E03AQHPqGALqxTwzQ/profile-displayphoto-shrink_800_800/0?e=1534982400&v=beta&t=Kf0ygqyygOOsQVqqkDcyi-ZH_yWWI6rFzte9Tn_P-ro"
             },
             {
-                nombre: 'David Herrera Torrado',
-                github: 'https://github.com/daher7',
-                linkedin: 'https://www.linkedin.com/in/david-herrera-torrado-771083166/',
-                image: 'assets/imgs/logo.png'
+                nombre: "David Herrera Torrado",
+                github: "https://github.com/daher7",
+                linkedin: "https://www.linkedin.com/in/david-herrera-torrado-771083166/",
+                image: "https://media.licdn.com/dms/image/C4E03AQFpGKoWWU9EJw/profile-displayphoto-shrink_800_800/0?e=1534982400&v=beta&t=E8XZ_shSfMsgz-krnMBFoQytZzFmwKWUWDFLl_QPseY"
             },
             {
-                nombre: 'Elena Jarabo',
-                github: 'https://github.com/keova',
-                linkedin: 'https://www.linkedin.com/in/elena-jarabo-ruiz/',
-                image: 'assets/imgs/logo.png'
+                nombre: "Elena Jarabo",
+                github: "https://github.com/keova",
+                linkedin: "https://www.linkedin.com/in/elena-jarabo-ruiz/",
+                image: "https://avatars1.githubusercontent.com/u/39187399?s=400&v=4"
             },
             {
-                nombre: 'jose  jccalzadag@gmail.com',
-                github: 'github!',
-                image: 'assets/imgs/logo.png'
+                nombre: "jose  jccalzadag@gmail.com",
+                github: "github!",
+                image: "assets/imgs/logo.png"
             },
             {
-                nombre: 'Luis Martinez',
-                github: 'github!',
-                image: 'assets/imgs/logo.png'
+                nombre: "Juan Madrigal Vergel",
+                github: "https://github.com/Skattspa",
+                linkedin: "https://www.linkedin.com/in/jmvergel/",
+                image: "https://avatars3.githubusercontent.com/u/15067035?s=400&v=4"
             },
             {
-                nombre: 'Manuel Jesús Moreno Arévalo',
-                github: 'https://github.com/manuelazo30',
-                linkedin: 'https://www.linkedin.com/in/manuelazo/',
-                image: 'assets/imgs/logo.png'
+                nombre: "Luis Martinez",
+                github: "github!",
+                image: "assets/imgs/logo.png"
             },
             {
-                nombre: 'Oscar  Rivera Yunquera',
-                github: 'https://github.com/Oscarriveragit',
-                linkedin: 'Www.linkedin.com/oscarriverayunquera',
-                image: 'assets/imgs/logo.png'
+                nombre: "Manuel Jesús Moreno Arévalo",
+                github: "https://github.com/manuelazo30",
+                linkedin: "https://www.linkedin.com/in/manuelazo/",
+                image: "assets/imgs/logo.png"
             },
             {
-                nombre: 'Obdulia Zamora Doménech',
-                github: 'https://github.com/ozamgmam',
-                linkedin: 'https://www.linkedin.com/in/obdulia-zamora-dom%C3%A9nech-081a4742/',
-                web: 'web2you.esy.es',
-                image: 'assets/imgs/logo.png'
+                nombre: "Oscar  Rivera Yunquera",
+                github: "https://github.com/Oscarriveragit",
+                linkedin: "Www.linkedin.com/oscarriverayunquera",
+                image: "https://media.licdn.com/dms/image/C5603AQFzXcSswWcDsw/profile-displayphoto-shrink_800_800/0?e=1534982400&v=beta&t=AwbKiokk8XPgeZInfP_qjbDAgvosCFvMwW9u9j_FNC8"
             },
             {
-                nombre: 'Valeriano Moreno',
-                github: 'https://github.com/Valexx55/',
-                linkedin: 'No me gusta linkedin',
-                image: 'assets/imgs/logo.png'
-            },
+                nombre: "Obdulia Zamora Doménech",
+                github: "https://github.com/ozamgmam",
+                linkedin: "https://www.linkedin.com/in/obdulia-zamora-dom%C3%A9nech-081a4742/",
+                web: "web2you.esy.es",
+                image: "https://media.licdn.com/dms/image/C5603AQG_xhKpDTQeIA/profile-displayphoto-shrink_800_800/0?e=1534982400&v=beta&t=hUabZttXiTHKToU3_Igl1Oe2B62VcefppPTeQ7H0ENE"
+            }
         ];
-        this.mostrar(compañeros);
+        this.mostrar(this.gente);
     }
-    IonicCreditosComponent.prototype.mostrar = function (compañeros) {
-        console.log(compañeros);
-        this.array_compañeros = compañeros;
+    IonicCreditosComponent.prototype.mostrar = function (gente) {
+        console.log(gente);
     };
     IonicCreditosComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'creditos',template:/*ion-inline-start:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/creditos/creditos.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Creditos</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <div *ngIf="array_compañeros"> -->\n     <!-- <section *ngFor="let compañero of compañeros" >  -->\n\n      <!-- {{compañeros.nombre}},{{compañeros.github}}, {{compañeros.image}}\n      -->\n        <ion-list>Nombre completo <span *ngIf="nick"></span></ion-list>\n        <ion-list>github</ion-list>\n        <ion-list><img src="#" alt="icono">  </ion-list>        \n    <!-- </section>\n  </div> -->\n\n  <!-- <ul *ngFor="let compañero of compañeros">\n    <li>{{compañeros.nombre}}-{{compañeros.github}}</li>\n  </ul> -->\n\n</ion-content>\n'/*ion-inline-end:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/creditos/creditos.html"*/
+            selector: "creditos",template:/*ion-inline-start:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/creditos/creditos.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Creditos</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n      <ion-list>\n          <section ion-item *ngFor="let compi of gente" > <!--(click)="itemTapped($event, item)"-->\n            <ion-icon item-left>\n                <img src="{{compi.image}}" alt="No tienes foto" height="50px" width="50px" style="border-radius: 50%;">\n            </ion-icon> \n            {{compi.nombre}}\n            <div class="item-note" item-right>\n              <a href="{{compi.github}}" target="_blank"><ion-icon name="logo-github"></ion-icon></a>\n              <a href="{{compi.linkedin}}" target="_blank">  <ion-icon name="logo-linkedin"></ion-icon></a>\n              </div>\n            </section>\n        </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/creditos/creditos.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], IonicCreditosComponent);
@@ -360,7 +362,7 @@ var IonicCreditosComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -453,13 +455,58 @@ var ModalContentPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormularioComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_login_model__ = __webpack_require__(287);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FormularioComponent = /** @class */ (function () {
+    function FormularioComponent() {
+        //inicializar los atributos
+        this.login = new __WEBPACK_IMPORTED_MODULE_1__app_login_model__["a" /* Login */]();
+    }
+    FormularioComponent.prototype.acceder = function (datos, valido) {
+        if (valido) {
+            console.log("los datos son validos");
+        }
+        else {
+            console.log("tucutu :P . Formulario no valido");
+        }
+        console.log("Datos rx: " + datos.nombre + " " + datos.pwd + " " + datos.pwd2);
+    };
+    FormularioComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'formulario',template:/*ion-inline-start:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/formulario/formulario.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Formulario</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <!--aquí va nuestro formulario-->\n<div style="text-align: center">\n  <form #formulario_login="ngForm" (ngSubmit)="acceder(formulario_login.value, formulario_login.valid)">\n      <div>\n        <ion-item>\n          <ion-label>Nombre</ion-label>\n          <ion-input type="text" #nombre="ngModel" name="nombre" [(ngModel)]="login.nombre" required pattern=".{4,}"></ion-input>\n        </ion-item>\n        <small [hidden]="!(formulario_login.submitted && !nombre.valid)">\n          Nombre de al menos 4 letras\n        </small>\n      </div>\n      <div>\n        <ion-item>\n          <ion-label>Password</ion-label>\n          <ion-input type="text" #pwd="ngModel" name="pwd" [(ngModel)]="login.pwd" required></ion-input>\n        </ion-item>\n        <small [hidden]="!(formulario_login.submitted && !pwd.valid)">\n          Contraseña obligatoria\n        </small>\n      </div>\n      <div>\n        <ion-item>\n          <ion-label>Password repe</ion-label>\n          <ion-input type="text" #pwd2="ngModel" name="pwd2" [(ngModel)]="login.pwd2" required validateEqual="pwd"></ion-input>\n          <!-- añadir directiva  -->\n        </ion-item>\n        <small [hidden]="(pwd2.valid || pwd2.pristine)">\n          Repita la misma contraseña\n        </small>\n      </div>\n      <button type="submit" ion-button [disabled]=!(formulario_login.valid)>Acceder</button>\n    </form>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/pages/formulario/formulario.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], FormularioComponent);
+    return FormularioComponent;
+}());
+
+//# sourceMappingURL=formulario.js.map
+
+/***/ }),
+
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(226);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -467,7 +514,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 224:
+/***/ 226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -475,23 +522,29 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_hello_ionic_hello_ionic__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_item_details_item_details__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_itunes_itunes__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_creditos_creditos__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_modal_modal__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_hello_ionic_hello_ionic__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_item_details_item_details__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_itunes_itunes__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_creditos_creditos__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_modal_modal__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_storage__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_formulario_formulario__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__validatorpwd_directive__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_forms__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -518,7 +571,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_itunes_itunes__["a" /* IonicComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_creditos_creditos__["a" /* IonicCreditosComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_modal_modal__["a" /* BasicPage */]
+                __WEBPACK_IMPORTED_MODULE_12__pages_modal_modal__["a" /* BasicPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_formulario_formulario__["a" /* FormularioComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__validatorpwd_directive__["a" /* EqualValidator */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -526,7 +581,8 @@ var AppModule = /** @class */ (function () {
                     links: []
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_13__ionic_storage__["a" /* IonicStorageModule */].forRoot()
+                __WEBPACK_IMPORTED_MODULE_13__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_16__angular_forms__["a" /* FormsModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
@@ -536,7 +592,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_itunes_itunes__["a" /* IonicComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_creditos_creditos__["a" /* IonicCreditosComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_modal_modal__["a" /* BasicPage */]
+                __WEBPACK_IMPORTED_MODULE_12__pages_modal_modal__["a" /* BasicPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_formulario_formulario__["a" /* FormularioComponent */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_8__ionic_native_status_bar__["a" /* StatusBar */],
@@ -552,21 +609,22 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 266:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_hello_ionic_hello_ionic__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_list_list__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_itunes_itunes__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_creditos_creditos__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_modal_modal__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_hello_ionic_hello_ionic__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_list_list__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_itunes_itunes__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_creditos_creditos__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_modal_modal__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_formulario_formulario__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -576,6 +634,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -603,7 +662,8 @@ var MyApp = /** @class */ (function () {
             { title: 'My First List', component: __WEBPACK_IMPORTED_MODULE_3__pages_list_list__["a" /* ListPage */] },
             { title: 'Itunes', component: __WEBPACK_IMPORTED_MODULE_6__pages_itunes_itunes__["a" /* IonicComponent */] },
             { title: 'creditos', component: __WEBPACK_IMPORTED_MODULE_7__pages_creditos_creditos__["a" /* IonicCreditosComponent */] },
-            { title: 'Modal Prueba', component: __WEBPACK_IMPORTED_MODULE_8__pages_modal_modal__["a" /* BasicPage */] }
+            { title: 'Modal Prueba', component: __WEBPACK_IMPORTED_MODULE_8__pages_modal_modal__["a" /* BasicPage */] },
+            { title: 'Formulario', component: __WEBPACK_IMPORTED_MODULE_10__pages_formulario_formulario__["a" /* FormularioComponent */] },
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -640,28 +700,31 @@ var MyApp = /** @class */ (function () {
     MyApp.prototype.contador = function () { };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/app/app.html"*/'<ion-menu [content]="content">\n\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Pages</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/Users/Dev1/Desktop/Projects/itunesExampleIonic/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* MenuController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* MenuController */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_9__ionic_storage__["b" /* Storage */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 275:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItunesService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -691,7 +754,82 @@ var ItunesService = /** @class */ (function () {
 
 //# sourceMappingURL=bitunes.service.js.map
 
+/***/ }),
+
+/***/ 287:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
+var Login = /** @class */ (function () {
+    function Login() {
+    }
+    return Login;
+}());
+
+//# sourceMappingURL=login.model.js.map
+
+/***/ }),
+
+/***/ 288:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EqualValidator; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+var EqualValidator = /** @class */ (function () {
+    function EqualValidator(validateEqual) {
+        this.validateEqual = validateEqual;
+    }
+    EqualValidator_1 = EqualValidator;
+    EqualValidator.prototype.validate = function (control) {
+        var vdev = null;
+        // self value (e.g. retype password)
+        var password_repe = control.value; //esta es la contraseña repe
+        // control value (e.g. password)
+        var password_orginal = control.root.get(this.validateEqual).value; //cojes el valor de queal, q referencia al otro objeto
+        console.log("Pasa por el validador");
+        console.log("e = " + password_orginal);
+        console.log("v = " + password_repe);
+        if (!(password_orginal === password_repe)) {
+            vdev = {
+                validateEqual: false
+            };
+        }
+        return vdev;
+    };
+    EqualValidator = EqualValidator_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+            selector: '[validateEqual][formControlName],[validateEqual][formControl],[validateEqual][ngModel]',
+            providers: [
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NG_VALIDATORS */], useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* forwardRef */])(function () { return EqualValidator_1; }), multi: true }
+            ]
+        }),
+        __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Attribute */])('validateEqual')),
+        __metadata("design:paramtypes", [String])
+    ], EqualValidator);
+    return EqualValidator;
+    var EqualValidator_1;
+}());
+
+//# sourceMappingURL=validatorpwd.directive.js.map
+
 /***/ })
 
-},[203]);
+},[205]);
 //# sourceMappingURL=main.js.map
