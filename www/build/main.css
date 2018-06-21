@@ -25688,3 +25688,11 @@ itunes li {
   list-style-type: none;
   font-weight: bold;
 }
+
+page-mapaweb #map {
+  height: 100%;
+}
+
+page-mapaweb .homero img {
+  border-radius: 50%;
+}

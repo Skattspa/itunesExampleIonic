@@ -25678,7 +25678,21 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+creditos img {
+  width: "100px";
+  height: "100px";
+  margin: "5% 0% 0% 45%";
+}
+
 itunes li {
   list-style-type: none;
   font-weight: bold;
+}
+
+page-mapaweb #map {
+  height: 100%;
+}
+
+page-mapaweb .homero img {
+  border-radius: 50%;
 }

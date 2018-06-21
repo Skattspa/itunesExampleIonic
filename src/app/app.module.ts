@@ -16,6 +16,11 @@ import { IonicStorageModule } from '@ionic/storage';
 import { FormularioComponent } from '../pages/formulario/formulario';
 import { EqualValidator } from './validatorpwd.directive';
 import { FormsModule } from '@angular/forms';
+import { MapawebPage } from '../pages/mapaweb/mapaweb';
+import { Geolocation } from '@ionic-native/geolocation';
+import { FotoCam } from '../pages/fotocamp/fotocam';
+import { Camera } from '@ionic-native/camera';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,9 @@ import { FormsModule } from '@angular/forms';
     IonicCreditosComponent,
     BasicPage,
     FormularioComponent,
-    EqualValidator
+    EqualValidator,
+    MapawebPage,
+    FotoCam
   ],
   imports: [
     BrowserModule,
@@ -35,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     IonicStorageModule.forRoot(),
     FormsModule
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,12 +53,17 @@ import { FormsModule } from '@angular/forms';
     IonicComponent,
     IonicCreditosComponent,
     BasicPage,
-    FormularioComponent
+    FormularioComponent,
+    MapawebPage,
+    FotoCam
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Geolocation,
+    Camera,
+    LocalNotifications
   ]
 })
 export class AppModule {}

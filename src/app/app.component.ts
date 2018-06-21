@@ -12,6 +12,8 @@ import { IonicCreditosComponent } from '../pages/creditos/creditos';
 import { BasicPage } from '../pages/modal/modal';
 import { Storage } from '@ionic/storage';
 import { FormularioComponent } from '../pages/formulario/formulario';
+import { MapawebPage } from '../pages/mapaweb/mapaweb';
+import { FotoCam } from '../pages/fotocamp/fotocam';
 
 @Component({
   templateUrl: 'app.html'
@@ -41,6 +43,8 @@ export class MyApp {
       { title: 'creditos', component: IonicCreditosComponent },
       { title: 'Modal Prueba', component: BasicPage },
       { title: 'Formulario', component: FormularioComponent },
+      { title: 'Mapa web Page', component: MapawebPage },
+      { title: 'Foto Cam', component: FotoCam },
     ];
 
 
