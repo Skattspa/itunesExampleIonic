@@ -284,13 +284,13 @@ var IonicCreditosComponent = /** @class */ (function () {
                 nombre: "Amaya Valdiviejas Ruiz",
                 github: "https://github.com/amaya1234",
                 linkedin: "https://es.linkedin.com/in/amaya-valdiviejas-ruiz-3696869b",
-                image: "https://avatars2.githubusercontent.com/u/22312605?s=400&v=4"
+                image: "../../assets/imgs/foto_amaya.PNG"
             },
             {
                 nombre: "Carlos Moreno",
                 github: "https://github.com/cmcarlos",
-                linkedin: '',
-                image: "https://avatars0.githubusercontent.com/u/36521321?s=400&v=4"
+                linkedin: 'https://www.linkedin.com/in/carlos-moreno-c%C3%A1mara-70222a48/',
+                image: "../../assets/imgs/foto_carlos.jpg"
             },
             {
                 nombre: "Daniel Adrián Durán",
@@ -320,7 +320,7 @@ var IonicCreditosComponent = /** @class */ (function () {
                 nombre: "Juan Madrigal Vergel",
                 github: "https://github.com/Skattspa",
                 linkedin: "https://www.linkedin.com/in/jmvergel/",
-                image: "https://avatars3.githubusercontent.com/u/15067035?s=400&v=4"
+                image: "../../assets/imgs/foto_juan.png"
             },
             {
                 nombre: "Luis Martinez",
@@ -360,13 +360,9 @@ var IonicCreditosComponent = /** @class */ (function () {
             alert('has hecho click ' + this.clicks + ' veces');
             var logo = document.getElementById('logo');
             logo.setAttribute('src', '../../assets/imgs/nuclear_bomb.gif');
-            logo.style.width = "500px";
-            logo.style.height = "500px";
-            this.cleanClicks();
+            // logo.style.width = "500px";
+            // logo.style.height = "500px";
         }
-    };
-    IonicCreditosComponent.prototype.cleanClicks = function () {
-        this.clicks = 0;
     };
     IonicCreditosComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -711,10 +707,9 @@ var FotoCam = /** @class */ (function () {
             styles: ["img {\n    border-radius: 50%;\n}"],
             providers: [__WEBPACK_IMPORTED_MODULE_0__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_screen_orientation__["a" /* ScreenOrientation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_local_notifications__["a" /* LocalNotifications */]]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__ionic_native_camera__["a" /* Camera */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__ionic_native_camera__["a" /* Camera */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_screen_orientation__["a" /* ScreenOrientation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_screen_orientation__["a" /* ScreenOrientation */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_local_notifications__["a" /* LocalNotifications */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_local_notifications__["a" /* LocalNotifications */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_screen_orientation__["a" /* ScreenOrientation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_local_notifications__["a" /* LocalNotifications */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]])
     ], FotoCam);
     return FotoCam;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=fotocam.js.map
